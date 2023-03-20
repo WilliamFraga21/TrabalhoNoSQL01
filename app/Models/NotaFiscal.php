@@ -9,4 +9,5 @@ class NotaFiscal extends Model
 {
     use HasFactory;
     protected $table = 'nota_fiscal';
+
 }
