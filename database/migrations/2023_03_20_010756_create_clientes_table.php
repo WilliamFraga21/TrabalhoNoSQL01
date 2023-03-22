@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nome');
             $table->string('telefone');
             $table->string('cpf');
-            $table->unsignedBigInteger('id_genero')->unique();
+            $table->unsignedBigInteger('id_genero');
             $table->string('email');
             $table->string('cep');
             $table->string('endereco');

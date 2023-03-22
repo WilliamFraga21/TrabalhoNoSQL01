@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('endereco');
             $table->string('cep');
             $table->string('numero');
-            $table->string('cargo');
             $table->string('salario');
             $table->integer('status');
             $table->unsignedBigInteger('id_funcao');

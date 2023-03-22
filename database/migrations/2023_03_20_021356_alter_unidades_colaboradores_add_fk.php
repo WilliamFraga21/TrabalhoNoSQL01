@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::table('unidades', function (Blueprint $table) {
-            $table->foreignId('caixas_id')->unique()->constrained();
-            $table->foreignId('colaboradores_id')->unique()->constrained();
+            $table->foreignId('caixas_id')->constrained();
+            $table->foreignId('colaboradores_id')->constrained();
         });
     }
 
