@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::table('entrada_produtos', function (Blueprint $table) {
 //            estudar do pq não tá aceitando o relacionamento 1 -> 1
-            $table->foreignId('compra_estoques_id')->constrained();
+            $table->foreignId('compra_estoques_id')->unique()->constrained();
         });
     }
 
