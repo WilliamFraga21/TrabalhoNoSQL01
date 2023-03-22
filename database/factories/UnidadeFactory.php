@@ -25,7 +25,7 @@ class UnidadeFactory extends Factory
             'numero' => $faker->randomNumber(),
             'cep' => $faker->postcode(),
             'cidade' => $faker->city(),
-            'caixas_id' => Caixa::all()->random()->id,
+            'caixas_id' => fake()->unique()->numberBetween(1,15),
             'colaboradores_id' => Colaborador::all()->random()->id,
             'data_fundacao' => $faker->date('1970-03-01')
         ];

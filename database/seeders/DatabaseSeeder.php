@@ -28,6 +28,8 @@ class DatabaseSeeder extends Seeder
             CaixaSeeder::class,
             unidadeSeeder::class,
             FornecedorSeeder::class,
+            CompraEstoqueSeeder::class,
+            EntradaProdutoSeeder::class,
         ]);
     }
 }
