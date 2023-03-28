@@ -15,14 +15,13 @@ return new class extends Migration
     {
         Schema::create('litros', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_produto')->unique();
             $table->decimal('litro');
             $table->decimal('unidade_medida');
             $table->timestamps();
         });
 
         Schema::table('litros', function (Blueprint $table) {
-            $table->foreign('id_produto')->references('id')->on('produtos');
+            $table->foreignID('id_produto')->references('id')->on('produtos');
         });
     }
 

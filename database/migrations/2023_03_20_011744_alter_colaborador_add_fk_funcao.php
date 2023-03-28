@@ -14,7 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::table('colaboradores', function (Blueprint $table) {
-            $table->foreign('id_funcao')->references('id')->on('funcoes');
+            $table->foreignId('id_funcao')->constrained()->references('id')->on('funcoes');
+
         });
     }
 

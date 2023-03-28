@@ -15,14 +15,13 @@ return new class extends Migration
     {
         Schema::create('pesos', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_produto')->unique();
             $table->decimal('peso');
             $table->decimal('unidade_medida');
             $table->timestamps();
         });
 
         Schema::table('pesos', function (Blueprint $table) {
-            $table->foreign('id_produto')->references('id')->on('produtos');
+            $table->foreignID('id_produto')->references('id')->on('produtos');
         });
     }
 

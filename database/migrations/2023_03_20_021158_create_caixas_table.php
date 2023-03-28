@@ -21,6 +21,7 @@ return new class extends Migration
             $table->decimal('valor_agua');
             $table->decimal('valor_luz');
             $table->decimal('valor_aluguel');
+            $table->dateTime('Data_Mes');
             $table->timestamps();
         });
     }

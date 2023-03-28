@@ -18,6 +18,7 @@ return new class extends Migration
             $table->decimal('valor_venda');
             $table->decimal('lucro');
             $table->decimal('comissao');
+            $table->dateTime('Data_Comissao');
             $table->integer('status');
             $table->timestamps();
         });

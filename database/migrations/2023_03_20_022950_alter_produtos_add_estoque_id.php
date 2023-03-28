@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('produtos', function (Blueprint $table) {
-            $table->foreignId('estoques_id')->constrained();
+            $table->foreignId('id_estoque')->constrained()->references('id')->on('estoques');
         });
     }
 

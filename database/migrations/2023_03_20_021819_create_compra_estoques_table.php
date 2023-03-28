@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('compra_estoques', function (Blueprint $table) {
             $table->id();
+            $table->string('Nome_Produto');
             $table->dateTime('data_compra');
             $table->decimal('valor_pago');
             $table->integer('status');

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->decimal('valor_pago');
             $table->decimal('lucro');
+            $table->dateTime('Data_NotaFiscal');
             $table->timestamps();
         });
     }

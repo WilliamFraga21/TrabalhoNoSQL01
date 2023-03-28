@@ -20,11 +20,12 @@ class CompraEstoqueFactory extends Factory
     public function definition()
     {
         return [
-            'data_compra' => fake()->date('1970-03-01'),
+            'Nome_Produto' => fake()->word(),
+            'data_compra' => fake()->dateTimeThisDecade('2019-03-01'),
             'valor_pago' => fake()->randomFloat(2, 2, 20000),
             'status' => fake()->numberBetween(0,1),
-            'unidades_id' => Unidade::all()->random()->id,
-            'fornecedores_id' => Fornecedor::all()->random()->id,
+            'id_unidades' => Unidade::all()->random()->id,
+            'id_fornecedores' => Fornecedor::all()->random()->id,
         ];
     }
 }

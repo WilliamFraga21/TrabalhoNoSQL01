@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->integer('caixa');
             $table->dateTime('data_dia');
-            $table->unsignedBigInteger('id_colaborador');
             $table->timestamps();
         });
     }

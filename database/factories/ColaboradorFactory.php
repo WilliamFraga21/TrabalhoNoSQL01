@@ -27,7 +27,8 @@ class ColaboradorFactory extends Factory
             'numero' => $faker->randomNumber(),
             'salario' => fake()->randomFloat(2, 2, 20000),
             'status' => $faker->numberBetween(0,1),
-            'id_funcao' => fake()->numberBetween(1,12)
+            'id_funcao' => fake()->numberBetween(1,12),
+            'id_unidade' => fake()->numberBetween(1,15)
         ];
     }
 }

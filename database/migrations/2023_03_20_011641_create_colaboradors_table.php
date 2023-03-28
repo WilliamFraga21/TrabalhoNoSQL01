@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('numero');
             $table->string('salario');
             $table->integer('status');
-            $table->unsignedBigInteger('id_funcao');
+
             $table->timestamps();
         });
     }

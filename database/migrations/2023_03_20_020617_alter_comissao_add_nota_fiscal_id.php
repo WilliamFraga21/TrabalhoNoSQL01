@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('comissao', function (Blueprint $table) {
-            $table->foreignId('nota_fiscal_id')->constrained('nota_fiscal');
+            $table->foreignId('nota_fiscal_id')->constrained()->references('id')->on('nota_fiscal');
         });
     }
 

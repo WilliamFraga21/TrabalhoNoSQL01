@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->decimal('valor');
             $table->integer('quantidade');
+            $table->dateTime('Data_Venda');
             $table->integer('status');
             $table->timestamps();
         });

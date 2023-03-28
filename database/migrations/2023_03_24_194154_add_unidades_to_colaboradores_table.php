@@ -13,9 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('entrada_produtos', function (Blueprint $table) {
-//            estudar do pq não tá aceitando o relacionamento 1 -> 1
-            $table->foreignId('compra_estoques_id')->constrained();
+        Schema::table('colaboradores', function (Blueprint $table) {
+            $table->foreignId('id_unidade')->constrained()->references('id')->on('unidades');
         });
     }
 
@@ -26,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('colaboradores', function (Blueprint $table) {
+            //
+        });
     }
 };
