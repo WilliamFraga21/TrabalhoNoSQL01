@@ -24,11 +24,12 @@ class ColaboradorFactory extends Factory
             'email' => $faker->unique()->safeEmail(),
             'cep' => $faker->postcode(),
             'endereco' => $faker->streetName(),
-            'numero' => $faker->randomNumber(),
+            'numero' => $faker->randomNumber(3),
             'salario' => fake()->randomFloat(2, 2, 20000),
+            'Data_Mes' => fake()->dateTimeThisDecade('2019-12-01'),
             'status' => $faker->numberBetween(0,1),
             'id_funcao' => fake()->numberBetween(1,12),
-            'id_unidade' => fake()->numberBetween(1,15)
+            'id_unidade' => fake()->numberBetween(1,10)
         ];
     }
 }

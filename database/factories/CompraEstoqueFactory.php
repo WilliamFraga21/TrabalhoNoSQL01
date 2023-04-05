@@ -19,9 +19,10 @@ class CompraEstoqueFactory extends Factory
      */
     public function definition()
     {
+        $faker = \Faker\Factory::create('pt_BR');
         return [
-            'Nome_Produto' => fake()->word(),
-            'data_compra' => fake()->dateTimeThisDecade('2019-03-01'),
+            'Nome_Produto' => $faker->unique()->word(1),
+            'data_compra' => fake()->dateTimeThisDecade('2019-12-01'),
             'valor_pago' => fake()->randomFloat(2, 2, 20000),
             'status' => fake()->numberBetween(0,1),
             'id_unidades' => Unidade::all()->random()->id,

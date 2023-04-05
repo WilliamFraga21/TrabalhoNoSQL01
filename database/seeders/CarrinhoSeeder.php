@@ -15,6 +15,6 @@ class CarrinhoSeeder extends Seeder
      */
     public function run()
     {
-        Carrinho::factory()->count(10000)->create();
+        Carrinho::factory()->count(40000)->create();
     }
 }

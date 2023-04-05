@@ -15,6 +15,6 @@ class EntradaProdutoSeeder extends Seeder
      */
     public function run()
     {
-        EntradaProduto::factory()->count(3000)->create();
+        EntradaProduto::factory()->count(7000)->create();
     }
 }

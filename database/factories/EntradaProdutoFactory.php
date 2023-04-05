@@ -20,7 +20,7 @@ class EntradaProdutoFactory extends Factory
         return [
             'quantidade' => fake()->numberBetween(1,10),
             'fardo' => fake()->numberBetween(50, 200),
-            'data_entrada' => fake()->dateTimeThisDecade('2016-03-01'),
+            'data_entrada' => fake()->dateTimeThisDecade('2019-12-01'),
             'compra_estoques_id' => CompraEstoque::all()->unique()->random()->id
         ];
     }

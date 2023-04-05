@@ -15,6 +15,6 @@ class ComissaoSeeder extends Seeder
      */
     public function run()
     {
-        Comissao::factory()->count(9000)->create();
+        Comissao::factory()->count(35000)->create();
     }
 }

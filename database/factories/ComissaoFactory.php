@@ -22,7 +22,7 @@ class ComissaoFactory extends Factory
             'valor_venda' => fake()->randomFloat(2,300,7000),
             'lucro' => fake()->randomFloat(2,50,3000),
             'comissao' => fake()->randomFloat(2,20,1000),
-            'Data_Comissao' => fake()->dateTimeThisDecade('2019-03-01'),
+            'Data_Comissao' => fake()->dateTimeThisDecade('2019-12-01'),
             'status' => fake()->numberBetween(0,1),
             'nota_fiscal_id' => NotaFiscal::all()->random()->id,
         ];

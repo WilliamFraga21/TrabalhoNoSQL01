@@ -15,6 +15,6 @@ class CaixaSeeder extends Seeder
      */
     public function run()
     {
-        Caixa::factory()->count(1200)->create();
+        Caixa::factory()->count(9000)->create();
     }
 }

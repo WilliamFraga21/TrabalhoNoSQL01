@@ -27,7 +27,7 @@ class ClienteFactory extends Factory
             'email' => $faker->unique()->safeEmail(),
             'cep' => $faker->postcode(),
             'endereco' => $faker->streetName(),
-            'numero' => $faker->randomNumber(),
+            'numero' => $faker->randomNumber(3),
             'bairro' => $faker->streetName(),
             'estado' => Address::state(),
             'status' => $faker->numberBetween(0,1)

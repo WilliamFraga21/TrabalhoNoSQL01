@@ -15,6 +15,6 @@ class EstoqueSeeder extends Seeder
      */
     public function run()
     {
-        Estoque::factory()->count(3000)->create();
+        Estoque::factory()->count(7000)->create();
     }
 }

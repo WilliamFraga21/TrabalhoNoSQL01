@@ -20,7 +20,7 @@ class VendedorFactory extends Factory
     {
         return [
             'caixa' => fake()->numberBetween(1,10),
-            'data_dia' => fake()->dateTimeThisDecade('2019-03-01'),
+            'data_dia' => fake()->dateTimeThisDecade('2019-12-01'),
             'id_colaborador' => Colaborador::all()->random()->id,
         ];
     }

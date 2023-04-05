@@ -15,6 +15,6 @@ class NotaFiscalSeeder extends Seeder
      */
     public function run()
     {
-        NotaFiscal::factory()->count(9000)->create();
+        NotaFiscal::factory()->count(35000)->create();
     }
 }

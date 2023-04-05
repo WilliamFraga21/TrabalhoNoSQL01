@@ -15,6 +15,6 @@ class ColaboradorSeeder extends Seeder
      */
     public function run()
     {
-        Colaborador::factory()->count(400)->create();
+        Colaborador::factory()->count(1000)->create();
     }
 }

@@ -23,7 +23,7 @@ class NotaFiscalFactory extends Factory
 
             'valor_pago' => fake()->randomFloat(2,300,7000),
             'lucro' => fake()->randomFloat(2,50,4000),
-            'Data_NotaFiscal' => fake()->dateTimeThisDecade('2019-03-01'),
+            'Data_NotaFiscal' => fake()->dateTimeThisDecade('2019-12-01'),
             'tipo_pagamentos_id' => TipoPagamento::all()->random()->id,
             'carrinhos_id' => Carrinho::all()->random()->id,
         ];

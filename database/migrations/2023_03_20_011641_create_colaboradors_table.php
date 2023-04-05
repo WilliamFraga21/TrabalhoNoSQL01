@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('cep');
             $table->string('numero');
             $table->string('salario');
+            $table->dateTime('Data_Mes');
             $table->integer('status');
 
             $table->timestamps();

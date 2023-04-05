@@ -17,13 +17,13 @@ class ProdutoFactory extends Factory
      */
     public function definition()
     {
-        fake()->locale('pt-BR');
+        $faker = \Faker\Factory::create('pt_BR');
         return [
-            'nome' => fake()->word(),
+            'nome' => $faker->unique()->word(1),
             'valor_minimo' => fake()->randomFloat(2,15,100),
             'valor' => fake()->randomFloat(2,30,150),
             'quantidade' => fake()->numberBetween(1,10),
-            'marca' => fake()->word(),
+            'marca' => $faker->unique()->word(2),
             'status' => fake()->numberBetween(0,1),
             'id_estoque' => Estoque::all()->random()->id,
         ];

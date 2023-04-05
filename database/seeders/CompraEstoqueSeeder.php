@@ -15,6 +15,6 @@ class CompraEstoqueSeeder extends Seeder
      */
     public function run()
     {
-        CompraEstoque::factory()->count(3000)->create();
+        CompraEstoque::factory()->count(7000)->create();
     }
 }
